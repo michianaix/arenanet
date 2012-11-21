@@ -1,0 +1,159 @@
+/*------------------------------------------------------------
+	Home
+------------------------------------------------------------*/
+
+body.home {
+	background: #F9E9D2;
+	overflow-x: hidden;
+}
+
+
+/*------------------------------------------------------------
+	Guts
+------------------------------------------------------------*/
+
+.floater {
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	z-index: 10;
+}
+
+.tooltip {
+	height: 40px;
+	display: inline-block;
+	padding: 0 12px 0 10px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.15);
+	position: relative;
+	-webkit-transition: all .1s ease-in;
+	opacity: 0;
+	-webkit-transform: translateY(-6px);
+	line-height: 42px;
+}
+
+
+.floater.show .tooltip {
+	-webkit-transition: all .1s cubic-bezier(.28,.64,.52,.94);
+	opacity: 1;
+	-webkit-transform: translateY(0);
+}
+
+.tooltip .date {
+	height: 20px;
+	color: white;
+	background: #F7705E;
+	float: left;
+	border-radius: 2px;
+	padding: 0 5px;
+	line-height: 20px;
+	font-size: 13px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.tooltip .title {
+	float: left;
+	font-size: 15px;
+}
+
+.tooltip .triangle {
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -4px;
+	width: 10px; 
+	height: 10px; 
+	line-height: 2;
+	font-size: 9px;
+	color: white;
+	-webkit-transform: scaleX(2);
+	-moz-transform: scaleX(2);
+	text-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+
+section.guts {
+
+}
+
+section.guts .contain {}
+
+section.guts .contain .shortBio {
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 608px;
+}
+
+section.guts .contain .shortBio .leftCol {
+	float: left;
+	width: 250px;
+	margin-right: 114px;
+}
+
+section.guts .contain .shortBio .leftCol .fig1 {
+
+}
+
+section.guts .contain .shortBio .leftCol .fig1 .interactive {
+	width: 250px;
+	height: 255px;	
+	position: relative;
+}
+
+section.guts .contain .shortBio .leftCol .fig1 .interactive .background svg g.dotted {
+	opacity: .15;
+}
+
+section.guts .contain .shortBio .leftCol .fig1 .interactive .background svg g.lined {
+	-webkit-transition: opacity .9s ease-out;
+	-moz-transition: opacity .9s ease-out;
+	opacity: .05;
+}
+
+section.guts .contain .shortBio .leftCol .fig1 .interactive .background svg g.points .past {
+	-webkit-transition: opacity .9s ease-out;
+	-moz-transition: opacity .9s ease-out;
+	opacity: .5;
+}
+
+section.guts .contain .shortBio .leftCol:hover .fig1 .interactive .background svg g.points .past {
+	-webkit-transition: opacity .3s ease-in;
+	-moz-transition: opacity .3s ease-in;
+	opacity: 1;
+}
+
+section.guts .contain .shortBio .leftCol:hover .fig1 .interactive .background svg g.lined {
+	-webkit-transition: opacity .3s ease-in;
+	-moz-transition: opacity .3s ease-in;
+	opacity: .1;
+}
+
+section.guts .contain .shortBio .leftCol .fig1 .interactive .background svg g.points circle {
+}
+
+section.guts .contain .shortBio .leftCol .fig1 .interactive .background svg g.points circle:hover  {
+	fill: #F7705E;
+}
+
+
+section.guts .contain .shortBio .leftCol .fig1 .caption {
+	font-family: feijoa, georgia;
+	font-style: italic;
+	font-size: 14px;
+	opacity: .6;
+	margin-top: 10px;
+	text-align: right;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+section.guts .contain .shortBio .rightCol {
+	float: right;
+	width: 236px;
+}
+
+section.guts .contain .shortBio .rightCol span.fig { opacity: .3;}
